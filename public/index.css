@@ -1,3 +1,95 @@
+html, body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 200;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #151515;
+    color: #fafafa;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.controls__connection {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#connectButton {
+    background-color: #00b300;
+    color: #fafafa;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#connectButton:disabled {
+    background-color: #b3b3b3;
+    cursor: not-allowed;
+}
+
+#disconnectButton {
+    background-color: #b30000;
+    color: #fafafa;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#disconnectButton:disabled {
+    background-color: #b3b3b3;
+    cursor: not-allowed;
+}
+
+#connectButton:disabled {
+    background-color: #b3b3b3;
+    cursor: not-allowed;
+}
+
+#messageInput {
+    background-color: #151515;
+    color: #fafafa;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #aaa;
+    min-width: 300px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#messageInput:disabled {
+    background-color: #252525;
+    color: #b3b3b3;
+    border: 1px solid #b3b3b3;
+}
+
+#sendButton {
+    background-color: #00b300;
+    color: #fafafa;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#sendButton:disabled {
+    background-color: #252525;
+    color: #b3b3b3;
+    border: 1px solid #b3b3b3;
+}
+
 main {
     font-family: 'Courier New', Courier, monospace;
 }
