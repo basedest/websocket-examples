@@ -31,14 +31,14 @@ connectButton.onclick = () => {
     };
     ws.onclose = () => {
         console.log('Disconnected from server');
-    }
+    };
 
     console.log('Connected to server');
     disconnectButton.disabled = false;
     sendButton.disabled = false;
     messageInput.disabled = false;
     connectButton.disabled = true;
-    renderMessage('Connected to server', {type: "connected"});
+    renderMessage('Connected to server', {type: 'connected'});
 }
 
 sendButton.onclick = () => {
@@ -54,5 +54,5 @@ disconnectButton.onclick = () => {
     sendButton.disabled = true;
     messageInput.disabled = true;
     connectButton.disabled = false;
-    renderMessage('Disconnected from server', {type: "disconnected"});
+    renderMessage('Disconnected from server', {type: 'disconnected'});
 }
