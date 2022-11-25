@@ -38,7 +38,7 @@ connectButton.onclick = () => {
     sendButton.disabled = false;
     messageInput.disabled = false;
     connectButton.disabled = true;
-    renderMessage('Connected to server', 'gray');
+    renderMessage('Connected to server', {type: "connected"});
 }
 
 sendButton.onclick = () => {
@@ -54,5 +54,5 @@ disconnectButton.onclick = () => {
     sendButton.disabled = true;
     messageInput.disabled = true;
     connectButton.disabled = false;
-    renderMessage('Disconnected from server', 'gray');
+    renderMessage('Disconnected from server', {type: "disconnected"});
 }
