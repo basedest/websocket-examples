@@ -1,14 +1,19 @@
-# websocket-examples
+# Websocket-examples
 
 This repository contains examples of using the WebSocket API in both Node.js and the browser JS.
 
-## install
+## Requirements
+
+* Node.js 8.0.0 or higher
+* npm 5.0.0 or higher
+
+## Install
 
 ```bash
 npm install
 ```
 
-## run
+## Run
 
 1. Get the app running:
 
